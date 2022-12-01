@@ -1,0 +1,17 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Catt Garrod",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@types/node": "^18.11.10",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "start:day01": "ts-node day01/index.ts",
+    "watch:day01": "nodemon day01/index.ts"
+  }
+}
