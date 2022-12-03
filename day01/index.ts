@@ -40,14 +40,14 @@
 
 // Part Two, Electric Boogaloo
 
-const fs = require("fs")
-const path = require("path")
+import fs from "fs"
+import path from "path"
 
 const data: number[] = fs
   .readFileSync(path.resolve(__dirname, "../day01/input.txt"))
   .toString()
   .split(/\r?\n/)
-  .map((value: string): Number => Number(value))
+  .map((value: string): number => Number(value))
 
 const totalCaloriesForEachElf: number[] = []
 
@@ -56,7 +56,7 @@ data.reduce((calorieAccumulator, currentCalorieValue) => {
   if (currentCalorieValue) {
     return calorieAccumulator + currentCalorieValue
   } else {
-    // If it is an empty line, check if the total calories accumulated is higher than the previous total, then reset the accumulator and start again
+    // If it is an empty line, push the total to the inventory, then start again
     totalCaloriesForEachElf.push(calorieAccumulator)
     calorieAccumulator = 0
     return calorieAccumulator

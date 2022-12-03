@@ -12,6 +12,8 @@
   },
   "scripts": {
     "start:day01": "ts-node day01/index.ts",
-    "watch:day01": "nodemon day01/index.ts"
+    "watch:day01": "nodemon day01/index.ts",
+    "start:day02": "ts-node day02/index.ts",
+    "watch:day02": "nodemon day02/index.ts"
   }
 }
