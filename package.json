@@ -19,6 +19,8 @@
     "start:day03": "ts-node day03/index.ts",
     "watch:day03": "nodemon day03/index.ts",
     "start:day04": "ts-node day04/index.ts",
-    "watch:day04": "nodemon day04/index.ts"
+    "watch:day04": "nodemon day04/index.ts",
+    "start:day05": "ts-node day05/index.ts",
+    "watch:day05": "nodemon day05/index.ts"
   }
 }
