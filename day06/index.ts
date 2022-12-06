@@ -1,5 +1,3 @@
-// Find first place in input where the 4 characters preceding/including the current character are all different
-
 import fs from "fs"
 import path from "path"
 
@@ -20,7 +18,6 @@ const getPartOneResult = (): number => {
     fourCharsToCheck.push(newChar)
   }
 
-  // returns true as soon as predicate is true
   input.some((letter, index) => {
     addChar(letter)
     result = index
@@ -34,7 +31,7 @@ const getPartOneResult = (): number => {
 
 console.log(getPartOneResult())
 
-// returns index of of place in input where the last 14 characters preceding/including the current character are all different
+// the only thing different here is the number 14
 const getPartTwoResult = (): number => {
   let fourCharsToCheck: string[] = []
   let result: number = 0
@@ -46,7 +43,6 @@ const getPartTwoResult = (): number => {
     fourCharsToCheck.push(newChar)
   }
 
-  // returns true as soon as predicate is true
   input.some((letter, index) => {
     addChar(letter)
     result = index
