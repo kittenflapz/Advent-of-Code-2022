@@ -1,6 +1,5 @@
 import fs from "fs"
 import path from "path"
-import { forEachChild } from "typescript"
 
 const input = fs
   .readFileSync(path.resolve(__dirname, "../day08/input.txt"))

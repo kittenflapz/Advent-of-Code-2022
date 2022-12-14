@@ -92,8 +92,7 @@ const getPartOneResult = (): number => {
               (directory) => directory.name === splitLine[2]
             ) ?? currentDirectory
         } else {
-          currentDirectory = directoryHistory[directoryHistory.length - 1]
-          directoryHistory.pop()
+          currentDirectory = directoryHistory.pop() || currentDirectory
         }
       }
     } else {
